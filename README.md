@@ -35,11 +35,7 @@
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ShreyansDey&theme=tokyonight" alt="Streak Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api?username=ShreyansDey&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShreyansDey&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/badge/profile-details?username=ShreyansDey&theme=tokyonight" alt="Profile Details" width="48%" />
 </p>
 
 ---
@@ -49,18 +45,3 @@
 </p>
 
 <p align="center">⚡ <i>Always learning, building, and leveling up step by step!</i></p>
-
-<!--
-**ShreyansDey/ShreyansDey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
