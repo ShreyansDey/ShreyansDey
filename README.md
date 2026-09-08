@@ -16,7 +16,7 @@
 
 ## 📌 About Me
 
-- 🎓 CS undergrad, Batch 2025–2029 — Ramakrishna Mission Vidyamandira (Belur Math), University of Kalyani
+- 🎓 CS undergrad, Batch 2025–2029 — Ramakrishna Mission Vidyamandira (Belur Math)
 - 🔐 Built a custom **SSO (Single Sign-On)** system from scratch — IdP/SP design, OpenID Connect-style auth code flow, JWT (RS256) signing, Flask + SQLAlchemy
 - 🛒 Built **Endeavour**, an ecommerce website
 - 🏫 Current developer of **RKMVMFamily**, my college's official website
