@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:2F81F7&height=200&section=header&text=Shreyans%20Dey&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Backend%20%26%20Auth%20Systems%20Developer&descAlignY=58&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:2F81F7&height=200&section=header&text=Shreyans%20Dey&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Backend%20and%20Auth%20Systems%20Developer&descAlignY=58&descAlign=50" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2F81F7&center=true&vCenter=true&width=650&lines=Flask+%2B+SQLAlchemy+%2B+React;Building+SSO+%2F+OpenID+Connect+%2F+JWT;Currently+studying+Data+Privacy+(DPDP%2C+GDPR);CS+Student+%40+RKM+Vidyamandira" alt="Typing SVG" />
 
@@ -16,7 +16,7 @@
 
 ## 📌 About Me
 
-- 🎓 CS undergrad, Batch 2025–2029 — Ramakrishna Mission Vidyamandira (Belur Math)
+- 🎓 CS undergrad, Batch 2025–2029 — Ramakrishna Mission Vidyamandira (Belur Math), University of Kalyani
 - 🔐 Built a custom **SSO (Single Sign-On)** system from scratch — IdP/SP design, OpenID Connect-style auth code flow, JWT (RS256) signing, Flask + SQLAlchemy
 - 🛒 Built **Endeavour**, an ecommerce website
 - 🏫 Current developer of **RKMVMFamily**, my college's official website
