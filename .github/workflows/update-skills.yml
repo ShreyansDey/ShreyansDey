@@ -1,0 +1,35 @@
+name: Auto-Update Skills
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # daily at 3 AM UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  update-skills:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run skills scan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ShreyansDey
+        run: python scripts/update_skills.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git diff --cached --quiet && echo "No changes" || git commit -m "chore: auto-update skills from repo topics"
+          git push
