@@ -121,3 +121,10 @@ Compliance-focused work covering DPDP India, GDPR, CCPA/CPRA, HIPAA.
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:0F2027&height=100&section=footer"/>
 </div>
+
+
+<!-- SKILLS:START -->
+<p align="left">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+</p>
+<!-- SKILLS:END -->
