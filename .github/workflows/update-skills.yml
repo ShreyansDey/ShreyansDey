@@ -32,4 +32,5 @@ jobs:
           git config user.email github-actions@github.com
           git add README.md
           git diff --cached --quiet && echo "No changes" || git commit -m "chore: auto-update skills from repo topics"
+          git pull --rebase origin main
           git push
