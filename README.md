@@ -91,7 +91,7 @@ Compliance-focused work covering DPDP India, GDPR, CCPA/CPRA, HIPAA.
 </div>
 
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ShreyansDey&theme=tokyonight&hide_border=true"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ShreyansDey&theme=tokyonight&hide_border=true&v=2"/>
 </div>
 
 <div align="center">
