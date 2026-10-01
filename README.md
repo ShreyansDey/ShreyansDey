@@ -16,7 +16,7 @@
 
 ## About
 
-Computer Science undergraduate (Batch 2025–2029) at Ramakrishna Mission Vidyamandira, Belur Math, affiliated with the University of Kalyani. I work mainly on backend systems and authentication — most recently a Single Sign-On service built from scratch — and I'm currently developing my college's official website. Alongside that, I'm studying data privacy frameworks (DPDP India, GDPR, CCPA/CPRA, HIPAA).
+Computer Science undergraduate (Batch 2025–2029) at Ramakrishna Mission Vidyamandira, Belur Math, affiliated with the University of Calcutta. I work mainly on backend systems and authentication — most recently a Single Sign-On service built from scratch — and I'm currently developing my college's official website. Alongside that, I'm studying data privacy frameworks and working on it (DPDP India, GDPR, CCPA/CPRA, HIPAA).
 
 &nbsp;
 
