@@ -127,23 +127,39 @@ def compute_streaks(calendar):
 
 
 def render_svg(total, current, longest):
-    return f"""<svg width="495" height="200" viewBox="0 0 495 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0.5" y="0.5" width="494" height="199" rx="10" fill="#1a1b27" stroke="#2C5364"/>
-  <text x="82" y="70" font-family="Segoe UI, sans-serif" font-size="28" font-weight="bold" fill="#2C5364" text-anchor="middle">{total}</text>
-  <text x="82" y="95" font-family="Segoe UI, sans-serif" font-size="13" fill="#a9b1d6" text-anchor="middle">Total Contributions</text>
+    return f"""<svg width="400" height="210" viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="borderGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f81f7"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="398" height="208" rx="12" fill="#0d1117" stroke="url(#borderGrad3)" stroke-width="1.2"/>
 
-  <line x1="185" y1="40" x2="185" y2="160" stroke="#2C5364" stroke-width="1"/>
+  <text x="83" y="90" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#58a6ff" text-anchor="middle">{total}</text>
+  <text x="83" y="115" font-family="Segoe UI, sans-serif" font-size="12.5" fill="#8b949e" text-anchor="middle">Total Contributions</text>
 
-  <text x="247" y="70" font-family="Segoe UI, sans-serif" font-size="28" font-weight="bold" fill="#e0af68" text-anchor="middle">{current}</text>
-  <text x="247" y="95" font-family="Segoe UI, sans-serif" font-size="13" fill="#a9b1d6" text-anchor="middle">Current Streak</text>
+  <line x1="155" y1="55" x2="155" y2="155" stroke="#21262d" stroke-width="1"/>
 
-  <line x1="310" y1="40" x2="310" y2="160" stroke="#2C5364" stroke-width="1"/>
+  <text x="200" y="90" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#e3b341" text-anchor="middle">{current}</text>
+  <text x="200" y="115" font-family="Segoe UI, sans-serif" font-size="12.5" fill="#8b949e" text-anchor="middle">Current Streak</text>
 
-  <text x="410" y="70" font-family="Segoe UI, sans-serif" font-size="28" font-weight="bold" fill="#7dcfff" text-anchor="middle">{longest}</text>
-  <text x="410" y="95" font-family="Segoe UI, sans-serif" font-size="13" fill="#a9b1d6" text-anchor="middle">Longest Streak</text>
+  <line x1="245" y1="55" x2="245" y2="155" stroke="#21262d" stroke-width="1"/>
 
-  <text x="247" y="185" font-family="Segoe UI, sans-serif" font-size="10" fill="#565f89" text-anchor="middle">updated {datetime.date.today().isoformat()}</text>
+  <text x="317" y="90" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#3fb950" text-anchor="middle">{longest}</text>
+  <text x="317" y="115" font-family="Segoe UI, sans-serif" font-size="12.5" fill="#8b949e" text-anchor="middle">Longest Streak</text>
+
+  <text x="200" y="190" font-family="Segoe UI, sans-serif" font-size="10.5" fill="#484f58" text-anchor="middle">updated {datetime.date.today().isoformat()}</text>
 </svg>"""
+
+
+ICONS = {
+    "Total Stars Earned": "\u2605",
+    "Total Commits (last year)": "\u25C8",
+    "Total PRs": "\u2387",
+    "Total Issues": "\u2298",
+    "Repos Contributed To": "\u25A3",
+}
 
 
 def render_overview_svg(stars, commits, prs, issues, contributed_to):
@@ -156,42 +172,63 @@ def render_overview_svg(stars, commits, prs, issues, contributed_to):
     ]
     row_svgs = []
     for i, (label, value) in enumerate(rows):
-        y = 55 + i * 28
+        y = 70 + i * 26
+        icon = ICONS[label]
         row_svgs.append(
-            f'<text x="25" y="{y}" font-family="Segoe UI, sans-serif" font-size="14" fill="#a9b1d6">{label}:</text>'
-            f'<text x="315" y="{y}" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#7dcfff" text-anchor="end">{value}</text>'
+            f'<text x="30" y="{y}" font-family="Segoe UI, sans-serif" font-size="14" fill="#e3b341">{icon}</text>'
+            f'<text x="52" y="{y}" font-family="Segoe UI, sans-serif" font-size="13.5" fill="#c9d1d9">{label}:</text>'
+            f'<text x="365" y="{y}" font-family="Segoe UI, sans-serif" font-size="13.5" font-weight="600" fill="#58a6ff" text-anchor="end">{value}</text>'
         )
     body = "\n  ".join(row_svgs)
-    return f"""<svg width="340" height="200" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0.5" y="0.5" width="339" height="199" rx="10" fill="#1a1b27" stroke="#2C5364"/>
-  <text x="25" y="30" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold" fill="#2C5364">Shreyans Dey's GitHub Stats</text>
+    return f"""<svg width="400" height="210" viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f81f7"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="398" height="208" rx="12" fill="#0d1117" stroke="url(#borderGrad)" stroke-width="1.2"/>
+  <text x="30" y="35" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Shreyans Dey's GitHub Stats</text>
+  <line x1="30" y1="45" x2="370" y2="45" stroke="#21262d" stroke-width="1"/>
   {body}
 </svg>"""
 
 
 def render_languages_svg(languages):
-    bar_w = 300
-    x = 20
+    bar_w = 340
+    x0 = 30
     segments = []
+    x = x0
     for name, pct, color in languages:
         w = max(bar_w * pct / 100, 2)
-        segments.append(f'<rect x="{x:.1f}" y="35" width="{w:.1f}" height="14" rx="3" fill="{color}"/>')
+        segments.append(f'<rect x="{x:.1f}" y="50" width="{w:.1f}" height="12" fill="{color}"/>')
         x += w
     legend = []
     for i, (name, pct, color) in enumerate(languages):
         col = i % 2
         row = i // 2
-        lx = 20 + col * 170
-        ly = 75 + row * 26
+        lx = 30 + col * 190
+        ly = 90 + row * 26
         legend.append(
             f'<circle cx="{lx}" cy="{ly - 4}" r="5" fill="{color}"/>'
-            f'<text x="{lx + 12}" y="{ly}" font-family="Segoe UI, sans-serif" font-size="12" fill="#a9b1d6">{name} {pct:.1f}%</text>'
+            f'<text x="{lx + 14}" y="{ly}" font-family="Segoe UI, sans-serif" font-size="12.5" fill="#c9d1d9">{name} <tspan fill="#8b949e">{pct:.1f}%</tspan></text>'
         )
     legend_svg = "\n  ".join(legend)
-    return f"""<svg width="340" height="200" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0.5" y="0.5" width="339" height="199" rx="10" fill="#1a1b27" stroke="#2C5364"/>
-  <text x="20" y="25" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold" fill="#2C5364">Most Used Languages</text>
-  {''.join(segments)}
+    bar_bg = f'<rect x="{x0}" y="50" width="{bar_w}" height="12" rx="6" fill="#21262d"/>'
+    return f"""<svg width="400" height="210" viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="barClip"><rect x="{x0}" y="50" width="{bar_w}" height="12" rx="6"/></clipPath>
+    <linearGradient id="borderGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f81f7"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="398" height="208" rx="12" fill="#0d1117" stroke="url(#borderGrad2)" stroke-width="1.2"/>
+  <text x="30" y="35" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Most Used Languages</text>
+  {bar_bg}
+  <g clip-path="url(#barClip)">
+    {''.join(segments)}
+  </g>
   {legend_svg}
 </svg>"""
 
