@@ -110,6 +110,7 @@ Two GitHub Actions do the automatic updates, no manual README edits required:
 | Workflow | What it does | How to trigger it |
 |---|---|---|
 | `update-skills.yml` | Scans every public repo's language + topics and rebuilds the **Tech Stack** badges above | Runs daily, or add a topic to any repo (e.g. `docker`, `node`) and re-run it manually |
+| `update-stats.yml` | Recomputes real commit/PR/issue/star counts and streaks (including private repos) and redraws the GitHub Stats cards above | Runs daily automatically |
 | `profile-3d-contrib.yml` | Regenerates the 3D contribution graph from your commit activity | Runs daily automatically |
 
 **To add a new skill:** open any repo → Settings → add a topic (e.g. `node`, `docker`, `postgresql`) → the next scheduled run (or a manual "Run workflow" click in the Actions tab) picks it up and adds the badge. No need to touch this file by hand.
