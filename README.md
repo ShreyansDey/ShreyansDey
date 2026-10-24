@@ -22,15 +22,22 @@ Outside code: chess, cricket, and making the people around me happy.
 
 <img src="https://skillicons.dev/icons?i=html,css,react,redux" />
 
-**Backend & Databases**
+**Backend**
 
-<img src="https://skillicons.dev/icons?i=flask,sqlite" />
+<img src="https://skillicons.dev/icons?i=flask,fastapi" />
+<img src="https://img.shields.io/badge/JWT_Authentication-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
+<img src="https://img.shields.io/badge/Password_Hashing-2C5364?style=for-the-badge"/>
+
+**Databases**
+
+<img src="https://skillicons.dev/icons?i=sqlite,postgres" />
 <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlite&logoColor=white"/>
+<img src="https://img.shields.io/badge/pgAdmin-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/phpMyAdmin-6C78AF?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
 
 **Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode,linux" />
+<img src="https://skillicons.dev/icons?i=git,github,vscode,linux,postman" />
 
 ### Projects
 
