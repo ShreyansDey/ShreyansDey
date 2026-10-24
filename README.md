@@ -1,10 +1,16 @@
-# Hi, I'm Shreyans Dey 👋
+# Hello everyone , I'm Shreyans Dey 👋
 
 Computer Science undergraduate (Batch 2025–2029) at Ramakrishna Mission Vidyamandira, Belur Math, affiliated with the University of Calcutta.
 
-I work mainly on backend development and authentication systems — most recently a Single Sign-On system I built from scratch. I'm currently developing my college's official website, RKMVMFamily, and working on data privacy topics like DPDP India, GDPR, CCPA/CPRA, and HIPAA.
+I got into coding because I love computers, and it turned out to be the one subject I'm actually good at. 😄
 
-I also built Endeavour, an ecommerce website.
+I started with frontend because it was the first thing I learned, but backend has pulled me in lately. My first project's email-sending feature nearly broke me, so I now respect anyone who got email working on the first try.
+
+I also learned that AI makes a lot of mistakes. If you don't understand the code underneath, you're not building anything, you're just vibing. So I'm trying to actually learn this stuff.
+
+Currently curious about: servers and DevOps (I know nothing yet, give me time).
+
+Outside code: chess, cricket, and making the people around me happy.
 
 ### Tech Stack
 
