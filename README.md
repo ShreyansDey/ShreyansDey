@@ -2,7 +2,7 @@
 
 Computer Science undergraduate (Batch 2025–2029) at Ramakrishna Mission Vidyamandira, Belur Math, affiliated with the University of Calcutta.
 
-I got into coding because I love computers, and it turned out to be the one subject I'm actually good at. 😄
+I got into coding because I love computers, and it was the only subject I knew even a little about. I was too bad at everything else to choose anything different. 😄
 
 I started with frontend because it was the first thing I learned, but backend has pulled me in lately. My first project's email-sending feature nearly broke me, so I now respect anyone who got email working on the first try.
 
